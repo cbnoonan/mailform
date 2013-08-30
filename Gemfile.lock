@@ -28,6 +28,7 @@ GEM
     arel (4.0.0)
     atomic (1.1.13)
     builder (3.1.4)
+    daemon_controller (1.1.5)
     erubis (2.7.0)
     hike (1.2.3)
     i18n (0.6.5)
@@ -40,6 +41,10 @@ GEM
     mime-types (1.24)
     minitest (4.7.5)
     multi_json (1.7.9)
+    passenger (4.0.14)
+      daemon_controller (>= 1.1.0)
+      rack
+      rake (>= 0.8.1)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -82,5 +87,6 @@ PLATFORMS
 
 DEPENDENCIES
   jquery-rails
+  passenger
   rails (= 4.0.0)
   sqlite3

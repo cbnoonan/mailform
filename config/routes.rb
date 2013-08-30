@@ -1,6 +1,8 @@
 Mailform::Application.routes.draw do
   resources :signups
+#  root :controller => 'signups'
   root :to => 'signups#create'
+#  root :to => 'mailform/signups#create'
 end
   # get "signup/create"
 
